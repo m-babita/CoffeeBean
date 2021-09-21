@@ -7,7 +7,8 @@
     
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Swipper css -->
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
     <link rel="stylesheet" href="src/styles.css">
 
     <title>CoffeeBeans</title>
@@ -31,7 +32,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#products" class="nav__link">Drinks</a></li>
+                    <li class="nav__item"><a href="#discover" class="nav__link">Discover</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -55,11 +56,94 @@
                 </div>
             </div>
         </section>
+        <!-- about -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Coffee With A Conscience <br> Visit our shop CoffeeBeans
+                        </h2>
+                        <p class="about__description">
+                            From seed to cup, farm's Beans are grown, processed, <br>and roasted to meet a premium coffee standard. <br>
+                            As BioWilly says- <br>“When the coffee is produced and roasted sustainably, <br>
+                            and the growers are compensated fairly, <br>the coffee just tastes better.”
+                        </p>
+                    </div>
+                    <div class="about__img">
+                        <img src="src/imgs/abt1.jpg" alt="" class="about__img">
+                    </div>
+            </div>
+        
+            <!-- Video -->
+            <section class="video section">
+                <h2 class="section__title">Haven't tried yet?</h2>
+                <div class="video__container container">
+                    <p class="video__description">That's a Dipresso...Give it a shot! 
+                        <br>Have an extraordinary and high quality taste for a great price.</p>
+                </div>
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="src/video/coffee.mp4" type="video/mp4">
+                    </video>
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="bx bx-play video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <!-- Discover -->
+
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Checkout our Drinks</h2>
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Moccha -->
+                     <div class="discover__card swiper-slide">
+                         <img src="src/imgs/cof1.jpg" alt="" class="discover__img">
+                         <div class="discover__data">
+                             <h2 class="discover__title">Moccha</h2>
+                         </div>
+                     </div>
+                     <!-- Cuppochino -->
+                     <div class="discover__card swiper-slide">
+                        <img src="src/imgs/cof2.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Cuppochino</h2>
+                        </div>
+                    </div>
+                    <!-- Expresso -->
+                    <div class="discover__card swiper-slide">
+                        <img src="src/imgs/cof3.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Expresso</h2>
+                        </div>
+                    </div>
+                    <!-- Chai -->
+                    <div class="discover__card swiper-slide">
+                        <img src="src/imgs/cof4.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Chai</h2>
+                        </div>
+                    </div>
+                    <!-- Latte -->
+                    <div class="discover__card swiper-slide">
+                        <img src="src/imgs/cof5.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Latte</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact section" id="contact"></section>
     </main>
 
      <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-   
+   <!-- Swiper js -->
+   <script src="src/swiper-bundle.min.js"></script>
     <script src="src/index.js"></script>
 </body>
 </html>
