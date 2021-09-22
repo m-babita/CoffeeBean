@@ -1,2 +1,2 @@
 #CoffeBeans
-<img src="src/imgs/preview.jpg">
+<img src="src/imgs/preview.jpeg">
