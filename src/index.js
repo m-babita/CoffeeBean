@@ -26,7 +26,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== MOUSEMOVE HOME IMG =====*/
+/* MOUSEMOVE HOME IMG */
 document.addEventListener('mousemove', move);
 function move(e){
     this.querySelectorAll('.move').forEach(layer =>{
@@ -39,7 +39,7 @@ function move(e){
     })
 }
 
-/*==================== SWIPER DISCOVER ====================*/
+/* SWIPER DISCOVER */
 let swiper = new Swiper(".discover__container", {
     effect: "coverflow",
     grabCursor: true,
@@ -52,7 +52,7 @@ let swiper = new Swiper(".discover__container", {
     },
 })
 
-/*==================== VIDEO ====================*/
+/* VIDEO */
 const videoFile = document.getElementById('video-file'),
       videoButton = document.getElementById('video-button'),
       videoIcon = document.getElementById('video-icon')
