@@ -416,16 +416,7 @@ input{
 
   /* medium devices */
   @media screen and (min-width: 568px) {
-    .home__img{
-      margin: 3rem;  
-      width: 400px;
-      height: 150px;
-    }
-  
-    .home__img img{
-      width: 400px;
-    }
-
+    
     .video__container {
       display: grid;
       grid-template-columns: .6fr;
@@ -470,12 +461,12 @@ input{
       
       .home__img{
         order: 1;
-        width: 400px;
-        height: 300px;
+        width: 375px;
+        height: 289px;
       }
     
       .home__img img{
-        width: 400px;
+        width: 375px;
       }
 
       .about__container {
@@ -520,12 +511,12 @@ input{
         padding: 0 .5rem;
       }
       .footer__rights {
-        
+        column-gap: 2rem;
         flex-direction: row;
         justify-content: space-between;
       }
       .footer__content {
-        justify-items: space-between;
+        
         margin-left: auto;
         
       }
